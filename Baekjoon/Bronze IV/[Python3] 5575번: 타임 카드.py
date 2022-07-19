@@ -1,0 +1,10 @@
+# Solution
+hA1, mA1, sA1, hA2, mA2, sA2 = map(int, input().split())
+hB1, mB1, sB1, hB2, mB2, sB2  = map(int, input().split())
+hC1, mC1, sC1, hC2, mC2, sC2  = map(int, input().split())
+A = (hA2 * 3600 + mA2 * 60 + sA2) - (hA1 * 3600 + mA1 * 60 + sA1)
+B = (hB2 * 3600 + mB2 * 60 + sB2) - (hB1 * 3600 + mB1 * 60 + sB1)
+C = (hC2 * 3600 + mC2 * 60 + sC2) - (hC1 * 3600 + mC1 * 60 + sC1)
+print(A // 3600, A % 3600 // 60, A % 3600 % 60)
+print(B // 3600, B % 3600 // 60, B % 3600 % 60)
+print(C // 3600, C % 3600 // 60, C % 3600 % 60)
